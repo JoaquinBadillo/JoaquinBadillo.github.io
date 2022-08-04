@@ -66,6 +66,7 @@ h1 {
 }
 
 #about {
+    height: minmax(95vh, 100vh);
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -91,7 +92,8 @@ h1 {
 }
 
 #projects {
-    margin: 2vw;
+    margin: 3vh 2vw 2vh 2vw;
+    padding: 2vmax;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -130,8 +132,8 @@ h1 {
     }
 }
 
-.card img {
-    object-fit: cover;
+.card > .wallpaper img {
+    object-fit: contain;
 }
 
 .card-content {
@@ -159,4 +161,3 @@ footer {
 svg:hover path{
     fill: #309CE7;
 }
-
