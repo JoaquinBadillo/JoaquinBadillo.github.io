@@ -134,7 +134,6 @@ h1 {
 }
 
 .wallpaper {
-    max-width: fit-content;
     object-fit: contain;
 }
 
