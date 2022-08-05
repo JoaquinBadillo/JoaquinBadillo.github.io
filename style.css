@@ -133,9 +133,8 @@ h1 {
     }
 }
 
-.card > .wallpaper img {
-    width: 100%;
-    min-height: 100%;
+.wallpaper {
+    max-width: fit-content;
     object-fit: contain;
 }
 
