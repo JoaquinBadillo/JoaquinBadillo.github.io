@@ -56,7 +56,8 @@ h1 {
 .main {
     flex-wrap: wrap-reverse;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
+    text-align: center;
 }
 
 .main img {
@@ -133,6 +134,8 @@ h1 {
 }
 
 .card > .wallpaper img {
+    width: 100%;
+    min-height: 100%;
     object-fit: contain;
 }
 
