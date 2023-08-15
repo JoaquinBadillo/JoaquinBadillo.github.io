@@ -15,6 +15,9 @@
 	--gray-999-basis: 0, 0%, 100%;
 	--gray-999_40: hsla(var(--gray-999-basis), 0.8);
 	--gray-999: #ffffff;
+	
+	--card-bg: rgba(226, 228, 235, 0.8);
+	--pill-color: #040054;
 
 	--accent-light: #5075db;
 	--accent-regular: #040054;
@@ -87,6 +90,9 @@
 	--gray-900: #101012;
 	--gray-999-basis: 225, 31%, 5%;
 	--gray-999: #060608;
+	
+	--card-bg: rgb(30, 30, 33, 0.8);
+	--pill-color: #670d4a;
 
 	--accent-light: #77abff;
 	--accent-regular: #3287dc;
@@ -95,7 +101,7 @@
 	--accent-subtle-overlay: hsla(215, 100%, 51%, 0.33);
 	--accent-text-over: var(--gray-0);
 
-	--link-color: var(--accent-dark);
+	--link-color: var(--gray-50);
 
 	--gradient-stop-1: #5b73ff;
 	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 81%);

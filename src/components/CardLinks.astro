@@ -1,0 +1,53 @@
+---
+import Icon from './Icon.astro';
+import type { iconPaths } from './IconPaths';
+
+/* --------------------------- */
+interface Props {
+    links: {
+        url: string;
+        image: string;
+        type: string;
+        label: string;
+    }[];
+}
+
+const { links } = Astro.props;
+---
+
+<div class="link-container">
+    {
+        links.map(({url, image, type, label}) => (
+            <a href={url} aria-label={label}>
+                {
+                    type === 'icon' ? 
+                    <span class="interactive-svg"><Icon icon={image as keyof typeof iconPaths} size='2.5rem'/></span> :
+                    <img src={image} /> 
+                }
+            </a>
+        ))
+    }
+</div>
+
+
+<style>
+    .link-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .link-container img {
+        width: 2.5rem;
+    }
+
+    .interactive-svg {
+        color: var(--gray-300);
+		transition: color var(--theme-transition);
+    }
+
+    .interactive-svg:hover,
+	.interactive-svg:focus {
+		color: var(--gray-50);
+	}
+</style>

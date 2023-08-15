@@ -5,22 +5,15 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Component Imports
-import CallToAction from '../components/CallToAction.astro';
-import Grid from '../components/Grid.astro';
+import Grid from '../components/Container.astro';
 import Hero from '../components/Hero.astro';
-import Icon from '../components/Icon.astro';
-import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
 import Skills from '../components/Skills.astro';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
-	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
-	.slice(0, 4);
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 ---
 
 <BaseLayout>
@@ -44,53 +37,21 @@ const projects = (await getCollection('work'))
 			<Skills />
 		</div>
 
-		<main class="wrapper stack gap-20 lg:gap-48">
-			<section class="section with-background with-cta">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+		<main class="stack">
+			<section id="work" class="with-background with-cta">
+				<header class="section-header">
+					<h3>Projects</h3>
 				</header>
 
-				<div class="gallery">
-					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-
-				<div class="cta">
-					<CallToAction href="/work/">
-						View All
-						<Icon icon="arrow-right" size="1.2em" />
-					</CallToAction>
-				</div>
-			</section>
-
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
+				<Grid variant="offset">
+					{
+						projects.map((project) => (
+							<li>
+								<PortfolioPreview project={project} />
+							</li>
+						))
+					}
+				</Grid>
 			</section>
 		</main>
 	</div>
@@ -146,6 +107,14 @@ const projects = (await getCollection('work'))
 	.section {
 		display: grid;
 		gap: 2rem;
+	}
+
+	#work {
+		margin: 0 auto;
+		max-width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.with-background {
@@ -209,10 +178,6 @@ const projects = (await getCollection('work'))
 		.with-cta .section-header {
 			justify-self: flex-start;
 			text-align: left;
-		}
-
-		.gallery {
-			grid-area: gallery;
 		}
 
 		.cta {

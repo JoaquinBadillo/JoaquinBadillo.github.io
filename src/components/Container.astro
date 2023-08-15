@@ -1,0 +1,19 @@
+<ul class="flex-container">
+	<slot />
+</ul>
+
+<style>
+	.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		gap: 2rem;
+		padding: 1.5rem 0;
+	}
+
+	ul {
+		list-style: none;
+		padding: 1rem;
+		margin: 0;
+	}
+</style>

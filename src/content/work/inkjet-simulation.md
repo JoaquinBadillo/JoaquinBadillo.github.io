@@ -1,14 +1,20 @@
 ---
-title: h2.0
-publishDate: 2019-10-02 00:00:00
-img: /assets/stock-4.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
-description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+title: Inkjet Simulation
+publishDate: 2022-07-26 00:00:00
+img: /assets/img/Inkjet.png
+img_alt: A grid of circles representing ink drops that displays an image of Rick Astley. 
+description: A simulation of a printer that uses electrically charged plates to displace ink droplets as desired, it was done using numerical methods to solve an ODE. 
 tags:
-  - Design
-  - Branding
+  - Electromagnetism
+  - ODEs
+urls:
+  - https://github.com/JoaquinBadillo/InkjetSimulation
+types:
+  - icon
+imgs:
+  - github-logo
+labels:
+  - GitHub Repository
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.

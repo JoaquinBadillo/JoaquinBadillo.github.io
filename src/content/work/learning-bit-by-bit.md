@@ -1,14 +1,25 @@
 ---
-title: Markdown Mystery Tour
-publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
-description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+title: Learning Bit by Bit
+publishDate: 2021-10-18 00:00:00
+img: /assets/img/MSHack2021.png
+img_alt: Learning Bit by Bit wallpaper
+description: An introductory course to CS fundamentals developed with .NET Interactive Notebooks and Journey during Microsoft's 2021 Student Hackathon. Our passion for eduaction was one of the reasons the project was selected as the "Hack For Education" winner.
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Hackathon
+  - Education
+  - .NET
+urls:
+  - https://github.com/louloubadillo/learning-bit-by-bit
+  - https://www.credly.com/badges/b2a5fbf2-334a-4bc1-be4c-1c19bf22c62a/public_url
+types:
+  - icon
+  - image
+imgs:
+  - github-logo
+  - /assets/img/MSHack2021-Badge.png
+labels:
+  - GitHub Repository
+  - Verified Badge
 ---
 
 ## Level-two heading

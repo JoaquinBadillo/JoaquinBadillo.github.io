@@ -1,15 +1,21 @@
 ---
-title: Bloom Box
-publishDate: 2019-12-01 00:00:00
-img: /assets/stock-2.jpg
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
-description: |
-  We paired with a cutting-edge music API and a team of horticulturalists
-  to build AI-generated playlists that maximize houseplant health.
+title: Music Visualizer
+publishDate: 2022-07-15 00:00:00
+img: /assets/img/MusicVisualizer.png
+img_alt: An octave symbol showing frequencies present in an audio.
+description: A creative project that uses the Fast Fourier Transform to make visualizations of the frequency domain given a signal. It was designed to expand upon the experience of listening to music. 
 tags:
-  - Dev
-  - Branding
-  - Backend
+  - Creativity
+  - Processing
+  - FFT
+urls:
+  - https://github.com/JoaquinBadillo/Music-Visualizer
+types:
+  - icon
+imgs:
+  - github-logo
+labels:
+  - GitHub Repository
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
