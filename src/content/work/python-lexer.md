@@ -1,15 +1,15 @@
 ---
-title: Music Visualizer
-publishDate: 2022-07-15 00:00:00
-img: /assets/img/MusicVisualizer.jpg
-img_alt: An octave symbol showing frequencies present in an audio.
-description: A creative project that uses the Fast Fourier Transform to make visualizations of the frequency domain given a signal. It was designed to expand upon the experience of listening to music. 
+title: Python Lexer
+publishDate: 2023-06-16 00:00:00
+img: /assets/img/Lexer.jpg
+img_alt: A diagram of the tokenization of source code.
+description: A lexer written in Elixir that uses regular expressions to tokenize Python code and create HTML files to highlight the syntax with a pre-defined stylesheet. For multiple files it can be executed both sequentially or in parallel.
 tags:
-  - Creativity
-  - Processing
-  - FFT
+  - Functional Programming
+  - Concurrency
+  - Lexical Analysis
 urls:
-  - https://github.com/JoaquinBadillo/Music-Visualizer
+  - https://github.com/TheLexers/PythonLexer
 types:
   - icon
 imgs:

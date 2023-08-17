@@ -1,7 +1,7 @@
 ---
 title: Bungee Jumping Model
 publishDate: 2022-12-5 00:00:00
-img: /assets/img/bungee.png
+img: /assets/img/BungeeJumping.jpg
 img_alt: A bungee jumper with a graph of their position.
 description: A mathematical model that describes the position of a bungee jumper as a function of time, as described by a set of ODEs.  
 tags:
@@ -14,7 +14,7 @@ types:
 imgs:
   - github-logo
 labels:
-  - GitHub Repository
+  - Repository
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.

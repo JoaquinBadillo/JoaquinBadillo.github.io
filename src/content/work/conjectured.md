@@ -1,7 +1,7 @@
 ---
 title: Conjectured
 publishDate: 2023-08-13 00:00:00
-img: /assets/img/conjectured.jpg
+img: /assets/img/Conjectured.jpg
 img_alt: Project architecture, containing a database, storage buckets a server and a client
 description: A computer science and mathematics dynamic blog developed with NextJS that uses cloud storage (buckets) and databases to store content.
 tags:
@@ -18,7 +18,7 @@ imgs:
   - github-logo
   - rocket-launch
 labels:
-  - GitHub Repository
+  - Repository
   - Website
 ---
 

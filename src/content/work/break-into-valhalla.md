@@ -1,21 +1,25 @@
 ---
-title: Music Visualizer
-publishDate: 2022-07-15 00:00:00
-img: /assets/img/MusicVisualizer.jpg
-img_alt: An octave symbol showing frequencies present in an audio.
-description: A creative project that uses the Fast Fourier Transform to make visualizations of the frequency domain given a signal. It was designed to expand upon the experience of listening to music. 
+title: Break Into Valhalla
+publishDate: 2023-06-16 00:00:00
+img: /assets/img/BreakIntoValhalla.jpg
+img_alt: Game characters with snowy mountains in the background.
+description: An indie action-based roguelike where you take the role of a once worthy warrior. Built with plain HTML, CSS and JS, Express, Postgres and the Unity Game Engine.
 tags:
-  - Creativity
-  - Processing
-  - FFT
+  - Full Stack
+  - Game Development
+  - Teamwork
 urls:
-  - https://github.com/JoaquinBadillo/Music-Visualizer
+  - https://github.com/JoaquinBadillo/BreakIntoValhalla
+  - https://joaquinbadillo.github.io/BreakIntoValhalla/
 types:
+  - icon
   - icon
 imgs:
   - github-logo
+  - rocket-launch
 labels:
   - Repository
+  - Website
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.

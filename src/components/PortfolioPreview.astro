@@ -47,6 +47,12 @@ const { data, slug } = Astro.props.project;
 		box-shadow: var(--shadow-md);
 	}
 
+	@media (prefers-contrast: more) {
+		.card:hover {
+			border: 1px solid var(--accent-dark);
+		}
+	}
+
 	.card-content {
 		padding-left: 0.75rem;
 		padding-right: 0.75rem;
