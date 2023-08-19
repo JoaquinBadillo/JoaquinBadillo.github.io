@@ -22,12 +22,58 @@ labels:
   - Website
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+## Technologies Used
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+---
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+* Plain HTML, CSS and JavaScript in the front-end.
+* Express JS for the api server.
+* PostgreSQL for the database (and Pg-Promise as the connector).
+* The Unity Game Engine (C#).
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+## Responsibilities and Contributions
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+---
+
+### Game 
+
+* Game Design.
+* Game UI.
+* Hitbox logic.
+* Simple procedural generation.
+* Consumables and interactive objects.
+* Map design.
+* Character stats: balancing and fetching data.
+* HTTP Requests to the API using Unity's WWW class.
+
+### API
+
+* Designing the interface.
+* Implementing routers.
+* Deployment (I used Railway).
+* Database connection.
+* Cross-Origin Resource Sharing (CORS).
+* Rate limiting.
+
+### Database
+
+* Data Modeling.
+* Stored Procedures.
+* Triggers.
+* Database Views.
+* Migrating from MySQL to PostgreSQL.
+
+### Front-end
+
+* Design and implementation of the website.
+* Deployment (I decided to use GitHub Pages).
+* Fetching data from the API.
+* Embedding the game.
+
+## Challenges
+
+---
+
+This project was challenging as it was made possible by a team of 3 members in a decently small amount of time. The 3 of us had to learn how to use the Unity Game Engine, while trying to implement the features we thought about on our previously written Game Design Document (GDD). 
+
+It was also difficult to find where to deploy the project and connect all the services, as we had to use a database, an API and a website. We ended up using Railway for the API and Database, while GitHub Pages allowed us to deploy the front-end with ease.
