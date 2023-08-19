@@ -6,7 +6,7 @@ img_alt: A diagram of the tokenization of source code.
 description: A lexer written in Elixir that uses regular expressions to tokenize Python code and create HTML files to highlight the syntax with a pre-defined stylesheet. For multiple files it can be executed both sequentially or in parallel.
 tags:
   - Functional Programming
-  - Concurrency
+  - Multithreading
   - Lexical Analysis
 urls:
   - https://github.com/TheLexers/PythonLexer

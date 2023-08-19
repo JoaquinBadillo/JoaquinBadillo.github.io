@@ -60,7 +60,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 					iconLinks.map(({ href, icon, label }) => (
 						<a href={href} class="social">
 							<span class="sr-only">{label}</span>
-							<Icon icon={icon} />
+							<Icon icon={icon} size='1.3em' />
 						</a>
 					))
 				}
@@ -194,7 +194,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 	.link {
 		display: inline-block;
-		color: var(--gray-300);
+		color: var(--gray-100);
 		text-decoration: none;
 	}
 
@@ -226,7 +226,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		display: flex;
 		padding: var(--icon-padding);
 		text-decoration: none;
-		color: var(--accent-regular);
+		color: var(--social-color);
 		transition: color var(--theme-transition);
 	}
 

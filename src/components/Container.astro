@@ -5,15 +5,23 @@
 <style>
 	.flex-container {
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
-		justify-content: space-around;
-		gap: 2rem;
-		padding: 1.5rem 0;
+		gap: 0.4rem 1.4rem;
+		padding: 0.8rem 0.4rem;
 	}
 
 	ul {
 		list-style: none;
 		padding: 1rem;
 		margin: 0;
+	}
+
+	@media (min-width: 50em) {
+		.flex-container {
+			justify-content: space-around;
+			padding: 1.5rem 0;
+			gap: 2rem;
+		}
 	}
 </style>

@@ -18,16 +18,18 @@ const { links } = Astro.props;
 <div class="link-container">
     {
         links.map(({url, image, type, label}) => (
-            <a href={url} aria-label={label}>
-                <div class="icon-wrapper">
-                    {
-                        type === 'icon' ? 
-                        <span class="interactive-svg"><Icon icon={image as keyof typeof iconPaths} size='2.5rem'/></span> :
-                        <img src={image} /> 
-                    }
-                    <span class="label">{ label }</span>
-                </div>
-            </a>
+            <label for={`Go to ${label}`}>
+                <a href={url} aria-label={label}>
+                    <div class="icon-wrapper">
+                        {
+                            type === 'icon' ? 
+                            <span class="interactive-svg"><Icon icon={image as keyof typeof iconPaths} size='2.5rem'/></span> :
+                            <img src={image} alt={`${label} image`} aria-hidden="true"/> 
+                        }
+                        <span class="label">{ label }</span>
+                    </div>
+                </a>
+            </label>
         ))
     }
 </div>
@@ -61,14 +63,17 @@ const { links } = Astro.props;
         justify-content: center;
     }
 
-    .label {
-        display: none;
+    a {
+        text-decoration: none;
     }
 
+    .label {
+        font-size: 0.8rem;
+    }
+    
     @media (min-width: 50em) {
         .label {
-            display: inline;
-            text-decoration: none;
+            font-size: 0.9rem;
         }
 
         .link-container a {

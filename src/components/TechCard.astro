@@ -1,0 +1,57 @@
+---
+interface Props {
+    title: string;
+    image: string;
+}
+
+const {title, image} = Astro.props;
+---
+
+<div class="skill">
+    <img src={`/assets/tech/${image}.svg`} alt={`${title} Logo`} />
+    <h3>{title}</h3>
+</div>
+
+
+<style>
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        background: var(--card-bg_60);
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        width: 16rem;
+        height: 16rem;
+        transition-property: all;
+		transition-duration: 0.2s;
+		transition-timing-function: linear;
+        box-shadow: var(--shadow-md);
+    }
+
+    .skill:hover,
+    .skill:focus {
+        box-shadow: var(--shadow-lg);
+        background: var(--card-bg);
+    }
+
+    .skill img {
+        width: 10rem;
+        height: 10rem;
+        padding: 1rem;
+    }
+
+    @media (prefers-contrast: more) {		
+		.skill {
+			background: var(--card-bg-contrast);
+			border: 2px solid var(--gray-400);
+		}
+
+		.skill:hover {
+			border: 2px solid var(--gray-100);
+		}
+	}
+</style>
