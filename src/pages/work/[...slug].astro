@@ -71,10 +71,6 @@ const { Content } = await entry.render();
 		}
 	}
 
-	.back-link {
-		display: none;
-	}
-
 	.details {
 		display: flex;
 		flex-direction: column;
@@ -86,7 +82,9 @@ const { Content } = await entry.render();
 
 	.tags {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 0.5rem;
+		justify-content: center;
 	}
 
 	.description {
