@@ -26,13 +26,25 @@ labels:
 
 ---
 
+* .NET
+* C#
+* Journey
 
-## Responsibilities and Contributions
+
+## Functionality
 
 ---
 
+This project was really fun to make, we were a team of 4 and all of us contributed to all the parts of the project. As we worked on it during the COVID-19 Pandemic we had lots of online meetings to design the contents of the course. We decided to make a course that would be introductory and would cover the fundamentals of computer science, but with a fast pace so that students could get just enough curiosity to keep learning on their own while covering lots of ideas that are important in computer science. For this ideas to get stuck we decided to make the course follow a narrative and to include lots of problems (which were made possible thanks to Journey) that they could solve on their notebooks and feel like they were discovering the ideas by themselves.
 
 ## Challenges
 
 ---
 
+The main challenge was learning the technologies: for instance I hadn't used C# before so I had to learn a programming language while trying to finish a project in a short amount of time. Moreover, [Journey](https://github.com/dotnet/interactive/tree/main/src/Microsoft.DotNet.Interactive.Journey) was relatively new so the 4 of us relied on documentation and the source code to start using it. But I think that the greatest challenge was to make the course itself, we had to decide what to include and what to leave out, and we had to make sure that the course was accessible to people with no prior knowledge of computer science. The fact that the 4 of us were really passionate about educations, as we had given programming tutoring and introductory courses on a Student Group (and Hack Club) before; really helped to make the content accessible and interesting.
+
+## Future Work
+
+---
+
+Close to the end of the hackathon we were looking for a way to host the project online, so that students could use it without installing too much dependencies. However we were not able to do so in time, but I think that it would be great to find a way to deploy it or if the tooling does not exist yet to create it ourselves and contriubte to the open source community. I have also been thinking about creating a learning platform that provides lessons in a similar fashion, with interactivity, problems and a story-like approach.

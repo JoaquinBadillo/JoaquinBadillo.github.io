@@ -76,4 +76,4 @@ labels:
 
 This project was challenging as it was made possible by a team of 3 members in a decently small amount of time. The 3 of us had to learn how to use the Unity Game Engine, while trying to implement the features we thought about on our previously written Game Design Document (GDD). 
 
-It was also difficult to find where to deploy the project and connect all the services, as we had to use a database, an API and a website. We ended up using Railway for the API and Database, while GitHub Pages allowed us to deploy the front-end with ease.
+It was also difficult to find where to deploy the project and connect all the services, as we had to use a database, an API and a website. We ended up using Railway for the API and Database, while GitHub Pages allowed us to deploy the front-end with ease. 

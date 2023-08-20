@@ -29,4 +29,4 @@ labels:
 
 This project was made for my Differential Equations final project. In reality, for that project it was only required to solve the ODE using a set of initial conditions, but since it was expected for us to make a plot I decided to go a step further and translate the model into MATLAB code.
 
-The greatest challenge behind this project was therefore not the implementation of the software, but rather modeling the bungee jump, as it involves using a piecewise function described by 2 differential equations, one of them is easy to solve which ocurrs when the bungee cord is not stretched; the other one however is a second order non-homogeneous ODE.
+The greatest challenge behind this project was therefore not the implementation of the software, but rather modeling the bungee jump, as it involves using a piecewise function described by 2 differential equations, one of them is easy to solve which ocurrs when the bungee cord is not stretched and describes simple free fall; the other one however is a second order non-homogeneous ODE which describes a damped oscillator.
