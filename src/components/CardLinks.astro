@@ -1,0 +1,91 @@
+---
+import Icon from './Icon.astro';
+import type { iconPaths } from './IconPaths';
+
+/* --------------------------- */
+interface Props {
+    links: {
+        url: string;
+        image: string;
+        type: string;
+        label: string;
+    }[];
+}
+
+const { links } = Astro.props;
+---
+
+<div class="link-container">
+    {
+        links.map(({url, image, type, label}) => (
+            <label for={`Go to ${label}`}>
+                <a href={url} aria-label={label}>
+                    <div class="icon-wrapper">
+                        {
+                            type === 'icon' ? 
+                            <span class="interactive-svg"><Icon icon={image as keyof typeof iconPaths} size='2.5rem'/></span> :
+                            <img src={image} alt={`${label} image`} aria-hidden="true"/> 
+                        }
+                        <span class="label">{ label }</span>
+                    </div>
+                </a>
+            </label>
+        ))
+    }
+</div>
+
+
+<style>
+    .link-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .link-container img {
+        width: 2.5rem;
+    }
+
+    .interactive-svg {
+        color: var(--gray-300);
+		transition: color var(--theme-transition);
+    }
+
+    .link-container a:hover .interactive-svg,
+    .link-container a:focus .interactive-svg {
+        color: var(--gray-50);
+    }
+
+    .icon-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .label {
+        font-size: 0.8rem;
+    }
+    
+    @media (min-width: 50em) {
+        .label {
+            font-size: 0.9rem;
+        }
+
+        .link-container a {
+            text-decoration: none;
+            transition: all;
+            transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            transition-duration: 0.5s;
+        }
+
+        .link-container a:hover {
+            text-decoration: underline;
+            color: var(--gray-50);
+        }
+    }
+</style>

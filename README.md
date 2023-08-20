@@ -1,2 +1,11 @@
 # Portfolio
-My personal online portfolio
+
+Hello!
+
+This is my portfolio: It is a static website that ships a minimal amount of JavaScript and it was made possible by [Astro](https://astro.build).
+
+The design was adapted from the [Portfolio Template](https://astro.build/themes/details/portfolio/), which also helped to bootstrap the project and get started with Astro.
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

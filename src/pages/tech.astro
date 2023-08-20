@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Container.astro';
+import Card from '../components/TechCard.astro';
+
+const technologies = [
+	["Python", "py"],
+	["C++", "cpp"],
+	["C", "c"],
+	["JavaScript", "js"],
+	["TypeScript", "ts"],
+	["Node JS", "nodejs"],
+	["Git", "git"],
+	["React JS", "react"],
+	["Express JS", "express"],
+	["PostgreSQL", "psql"],
+	["MySQL", "mysql"],
+	["Linux", "linux"],
+	["Elixir", "exs"],
+	["Unity", "unity"]
+]
+
+const learning = [
+	["Docker", "docker"],
+	["Go", "go"],
+	["Next JS", "next"],
+	["MongoDB", "mongo"],
+	["Phoenix", "phx"],
+	["Astro", "astro"]
+]
+---
+
+<BaseLayout
+	title="Technologies"
+	description="Some of the technologies I've worked with."
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Technologies"
+				tagline="Some of the technologies I've worked with."
+				align="start"
+			/>
+			<Grid variant="offset">
+				{
+					technologies.map(([title, image]) => (
+						<Card title={title} image={image} />
+					))
+				}
+			</Grid>
+		</main>
+
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Currently Learning"
+				tagline="Technologies I am starting to learn and adopt."
+				align="start"
+			/>
+			<Grid variant="offset">
+				{
+					learning.map(([title, image]) => (
+						<Card title={title} image={image} />
+					))
+				}
+			</Grid>
+		</main>
+	</div>
+</BaseLayout>
+
+<style>
+	.lg-pill {
+		font-size: 1.1rem;
+		padding: 0.1rem;
+	}
+
+	@media (min-width: 50em) {
+		.lg-pill {
+			font-size: 1.4rem;
+			padding: 0.3rem;
+		}
+	}
+</style>

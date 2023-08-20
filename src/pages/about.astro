@@ -1,0 +1,465 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Container.astro';
+import Pill from '../components/Pill.astro';
+
+const skills = [
+	"Communication",
+	"Creativity",
+	"Software Development",
+	"Web Development",
+	"Problem Solving",
+	"Flexibility",
+	"Critical Thinking",
+	"Time Management",
+	"Teamwork",
+	"Mathematical Reasoning"
+].sort((a, b) => a.localeCompare(b, "en", {sensitivity: 'base'}));
+
+const tech = {
+	swe_tec: [
+		"React JS",
+		"Leaflet",
+		"D3",
+		"PostgreSQL"
+	]
+}
+
+const certificates = [
+	{name: "Intermediate PostgreSQL", 
+	 date: "July 2023", 
+	 link: "https://coursera.org/verify/BL6CR3E6RZAZ", 
+	 skills: [
+		"PostgreSQL",
+		"Indexing",
+		"Data Modeling"
+	 ] 
+	},
+
+	{name: "Database Design and Basic SQL in PostgreSQL", 
+	 date: "June 2023", 
+	 link: "https://coursera.org/verify/R82A5ZTGYCDD",
+	 skills: [
+		"PostgreSQL",
+		"Data Modeling"
+	 ]
+	},
+
+	{name: "Mathematics for Machine Learning: Multivariate Calculus", 
+	 date: "December 2021", 
+	 link: "https://coursera.org/verify/D66AKW8B9WED",
+	 skills: [
+		"Gradient Descent",
+		"Regression Analysis",
+		"Multivariate Calculus", 
+		"NumPy"
+	 ]
+	},
+
+	{name: "Mathematics for Machine Learning: Linear Algebra",
+	 date: "November 2021", 
+	 link: "https://coursera.org/verify/6FAHQF5RX5ER",
+	 skills: [
+		"Linear Algebra",
+		"Diagonalization",
+		"NumPy"
+	 ]
+	}
+]
+
+const awards = [
+	{name: "Academic Scholarship for College", date: ["April 2021", "Present"], issuer: "Tecnológico de Monterrey"},
+	{name: "Academic Scholarship for High School", date: ["May 2018", "May 2021"], issuer: "Tecnológico de Monterrey"},
+	{name: "Microsoft Student Hackathon 2021 Challenge Winner", date: ["April 2021"], issuer: "Microsoft", link:["https://www.credly.com/badges/b2a5fbf2-334a-4bc1-be4c-1c19bf22c62a", "Badge"]}
+]
+---
+
+<BaseLayout title="About Me" description="Who am I? Joaquín Badillo">
+	<main class="wrapper about">
+		<Hero
+			title="About Me"
+			tagline="Thanks for stopping by! I'm a software developer and student from Mexico that tries to make data and technology more accessible to everyone."
+		>
+			<img
+				src="/assets/at-work.jpg"
+				alt="Joaquín Badillo programming"
+			/>
+		</Hero>
+		
+		<section>
+			<h2 class="section-title">Background</h2>
+			<div class="content">
+				<p>
+					I have always been of the curious kind. I love to learn new things and 
+					take on challenges, which is why I started programming at a younger age.
+				</p>
+				<p>
+					As of now, I am a student at Tecnológico de Monterrey, where I am pursuing a
+					B.S. in Computer Science and Technology. I am also working as a Software 
+					Engineer Intern at my college, where I collaborate with a team of urbanism 
+					researchers to create interactive data visualizations and web applications.
+				</p>
+				<p>
+					Besides programming, mathematics and music are some of my other passions. 
+					Thus one of my favourite projects (although somewhat simple to implement 
+					considering our current technologies) was a music visualizer; as I 
+					really enjoyed researching about signal processing and the Discrete 
+					Fourier Transform to create it.
+				</p>
+				<p>
+					But that was not the first time I got exposed to new mathematical knowledge 
+					through research. Calculus and Linear Algebra were the courses that really got 
+					me into learning mathematics on my own. One of the first times I researched mathematics
+					thoroughly was on High School, as I learned some concepts from the Calculus 
+					of Variations and Differential Geometry to show why it is efficient to navigate the 
+					Earth following Great Circles for one of my final projects.
+				</p>
+			</div>
+		</section>
+		<section>
+			<h2 class="section-title">Work Experience</h2>
+			<div class="content">
+				<header>
+					<h3>Software and Data Engineer Intern</h3>
+					<div class="inline-wrapper between">
+						<strong>Tecnológico de Monterrey</strong>
+						<span class="date">August 2022 - Present</span>
+					</div>
+				</header>
+				<ul class="inline-wrapper start">
+					{
+						tech.swe_tec.map((skill) => (
+							<li><Pill size="sm">{skill}</Pill></li>
+						))
+					}
+				</ul>
+
+				<details open>
+					<summary>Functions</summary>
+					<ul>
+						<li>Develop geospatial visualizations</li>
+						<li>Maintain and develop the frontend of web applications</li>
+						<li>Collaborate with researchers and interns remotely</li>
+				</details>
+
+				<header>
+					<h3>Mathematics and Programming Tutor</h3>
+					<span class="date">January 2019 - October 2022</span>
+				</header>
+
+				<details open>
+					<summary>Material Covered</summary>
+					<ul>
+						<li>Mathematics:</li>
+						<ul>
+							<li>Single Variable Calculus</li>
+							<li>Algebra</li>
+							<li>Set Theory</li>
+						</ul>
+						<li>Programming:</li>
+						<ul>
+							<li>Object Oriented Programming in C++</li>
+							<li>Introduction to Web Development (Front-end)</li>
+							<li>Introductory Computer Science and Programming</li>
+						</ul>
+				</details>
+			</div>
+		</section>
+		<section>
+			<h2 class="section-title">Education</h2>
+			<div class="content">
+				<header>
+					<h3>B.S. in Computer Science and Technology</h3>
+					<div class="inline-wrapper between">
+						<strong>Tecnológico de Monterrey</strong>
+						<span class="date">Graduation Date: June 2025</span>
+					</div>
+				</header>
+
+				<details open>
+					<summary>Relevant Courses</summary>
+					<ul>
+						<li>Integration of Computer Security in Networks and Software Systems</li>
+						<li>Analysis and Design of Advanced Algorithms</li>
+						<li>Software Construction and Decision Making</li>
+						<li>Implementation of Computational Methods</li>
+						<li>Device Interconnection (Computer Networks)</li>
+						<li>Programming of Data Structures and Fundamental Algorithms</li>
+						<li>Implementation of the Internet of Things</li>
+						<li>Analysis of Software Requirements</li>
+						<li>Object-Oriented Programming</li>
+					</ul>
+				</details>
+
+				<header>
+					<h3>IB Diploma Programme</h3>
+					<div class="inline-wrapper between">
+						<strong>Tecnológico de Monterrey</strong>
+						<span class="date">May 2021</span>
+					</div>
+				</header>
+
+				<details open>
+					<summary>Relevant Coursework</summary>
+				
+					<ul>
+						<li>Mathematics: Analysis and Approaches (SL)</li>
+							<ul>
+								<li> Approximating Trascendental Functions using Arithmetic </li>
+								<li> Researching the applications of Differential Geometry in Aviation (Geodesics) </li>
+							</ul>
+					</ul>
+				</details>
+			</div>
+		</section>
+		<section>
+			<h2 class="section-title">Certifications</h2>
+			<div class="content">
+				{
+					certificates.map((data) => (
+						<header>
+							<h3>{data.name}</h3>
+							<ul class="inline-wrapper start py">
+								{
+									data.skills.map((skill) => (
+										<li><Pill size="sm">{skill}</Pill></li>
+									))
+								}
+							</ul>
+							<div class="inline-wrapper start gap-20">
+								Certificate Issued: {data.date}
+								<span class="delimiter hide" aria-hidden="true">|</span>
+								<span class="decor"><a href={data.link}>Verification Link</a></span>
+							</div>
+						</header>
+					))
+				}
+			</div>
+		</section>
+
+		<section>
+			<h2 class="section-title">Awards</h2>
+			<div class="content">
+				{
+					awards.map((data) => (
+						<header>
+							<h3>{data.name}</h3>
+							<div class="inline-wrapper start gap-5">
+								<span>{data.issuer}</span>
+								<span class="delimiter" aria-hidden="true">|</span>
+								<span>{data.date.join(" - ")}</span>
+								{ data.link && <span class="delimiter" aria-hidden="true">|</span> <span class="decor"><a href={data.link[0]}>{data.link[1]}</a></span> }
+							</div>
+						</header>
+					))
+				}
+			</div>
+		</section>
+		<section>
+			<h2 class="section-title">Skills</h2>
+			<div class="content">
+				<Grid>
+					{
+						skills.map((skill) => (
+							<li><Pill>{skill}</Pill></li>
+						))
+					}
+				</Grid>
+			</div>
+		</section>
+	</main>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+		color: var(--gray-0);
+	}
+
+	.content ul {
+		font-size: 1.2rem;
+		padding-left: 1.8rem;
+	}
+
+	.content li {
+		padding: 0.25rem 0;
+	}
+
+	.content p {
+		margin-top: 1.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.8rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	details {
+		margin-top: 1rem;
+		margin-bottom: 0.75rem;
+	}
+
+	summary {
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+
+	summary:hover {
+		cursor: pointer;
+	}
+
+	section .content {
+		color: var(--gray-200);
+	}
+
+	section .content h4 {
+		color: var(--gray-0);
+	}
+
+	.inline-wrapper {
+		display: flex;
+		flex-direction: row;
+		max-width: 90%;
+		gap: 0.5rem 0.2rem;
+		flex-wrap: wrap;
+	}
+
+	.between {
+		justify-content: space-between;
+	}
+
+	.start {
+		justify-content: flex-start;
+	}
+
+	ul.inline-wrapper {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.date {
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-3xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+		margin-bottom: 1.2rem;
+	}
+
+	.content header {
+		padding: 0.5rem 0;
+		margin-bottom: 0.5rem;
+		font-size: 1.1rem;
+		color: var(--gray-100)
+	}
+
+	.content h3 {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+		color: var(--gray-0);
+	}
+
+	.content header strong {
+		font-size: 1.2rem;
+	}
+
+	.content {
+		font-size: 1.2rem;
+	}
+
+	.decor a {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.content header {
+			font-size: 1.3rem;
+		}
+
+		.content header strong {
+			font-size: 1.45rem;
+		}
+
+		.content {
+			font-size: 1.25rem;
+		}
+
+		.content ul {
+			font-size: 1.18rem;
+		}
+
+		.content h4 {
+			font-size: 1.25rem;
+		}
+
+		.section-title {
+			font-size: var(--text-2xl);
+		}
+
+		.inline-wrapper {	
+			gap: 0.5rem 0.8rem;
+		}
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	.delimiter {
+		margin-left: 0.25rem;
+		margin-right: 0.25rem
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.py {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+			padding: 0.5rem;
+		}
+
+		.hide {
+			display: inline;
+		}
+	}
+</style>
