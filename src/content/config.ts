@@ -9,10 +9,10 @@ export const collections = {
 			tags: z.array(z.string()),
 			img: z.string(),
 			img_alt: z.string(),
-			imgs: z.array(z.string()),
-			types: z.array(z.string()),
-			urls: z.array(z.string()),
-			labels: z.array(z.string())
+			imgs: z.array(z.string()).optional(),
+			types: z.array(z.string()).optional(),
+			urls: z.array(z.string()).optional(),
+			labels: z.array(z.string()).optional()
 		}),
 	}),
 };

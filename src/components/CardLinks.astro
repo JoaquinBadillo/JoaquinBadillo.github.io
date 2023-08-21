@@ -4,36 +4,36 @@ import type { iconPaths } from './IconPaths';
 
 /* --------------------------- */
 interface Props {
-    links: {
-        url: string;
-        image: string;
-        type: string;
-        label: string;
+    links?: {
+        url?: string;
+        image?: string;
+        type?: string;
+        label?: string;
     }[];
 }
 
 const { links } = Astro.props;
 ---
-
-<div class="link-container">
-    {
-        links.map(({url, image, type, label}) => (
-            <label for={`Go to ${label}`}>
-                <a href={url} aria-label={label}>
-                    <div class="icon-wrapper">
-                        {
-                            type === 'icon' ? 
-                            <span class="interactive-svg"><Icon icon={image as keyof typeof iconPaths} size='2.5rem'/></span> :
-                            <img src={image} alt={`${label} image`} aria-hidden="true"/> 
-                        }
-                        <span class="label">{ label }</span>
-                    </div>
-                </a>
-            </label>
-        ))
-    }
-</div>
-
+{ links &&
+    <div class="link-container">
+        {
+            links.map(({url, image, type, label}) => (
+                <label for={`Go to ${label}`}>
+                    <a href={url} aria-label={label}>
+                        <div class="icon-wrapper">
+                            {
+                                type === 'icon' ? 
+                                <span class="interactive-svg"><Icon icon={image as keyof typeof iconPaths} size='2.5rem'/></span> :
+                                <img src={image} alt={`${label} image`} aria-hidden="true"/> 
+                            }
+                            <span class="label">{ label }</span>
+                        </div>
+                    </a>
+                </label>
+            ))
+        }
+    </div>
+}
 
 <style>
     .link-container {
