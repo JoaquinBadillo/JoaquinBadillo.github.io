@@ -18,9 +18,15 @@ const { data, slug } = Astro.props.project;
 				{data.description}
 			</p>
 		</a>
-		<CardLinks links={data.imgs.map((image, i) => (
-			{ url: data.urls[i], image: image, type: data.types[i], label: data.labels[i] }
-		))} />
+		{ data.imgs &&
+			<CardLinks links={data.imgs.map((image, i) => (
+				{	url: data.urls && data.urls[i], 
+					image: image, 
+					type: data.types && data.types[i], 
+					label: data.labels && data.labels[i] 
+				}
+			))} />
+		}
 	</div>
 </div>
 

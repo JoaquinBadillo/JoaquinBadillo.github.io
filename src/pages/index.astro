@@ -41,6 +41,7 @@ const projects = (await getCollection('work'))
 			<section id="work" class="with-background with-cta">
 				<header class="section-header">
 					<h3>Projects</h3>
+          <p>Click on the titles to read more about each one</p>
 				</header>
 
 				<Grid variant="offset">
@@ -151,6 +152,11 @@ const projects = (await getCollection('work'))
 		color: var(--gray-300);
 	}
 
+	.section-header p {
+		text-align: center;
+		color: var(--gray-500);
+	}
+
 	.section-header h3 {
 		font-size: var(--text-2xl);
 	}
@@ -173,6 +179,7 @@ const projects = (await getCollection('work'))
 
 		.section-header h3 {
 			font-size: var(--text-4xl);
+			text-align: center;
 		}
 
 		.with-cta .section-header {
