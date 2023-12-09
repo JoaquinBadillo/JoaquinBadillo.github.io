@@ -9,11 +9,23 @@ const {title, image} = Astro.props;
 
 <div class="skill">
     <img src={`/assets/tech/${image}.svg`} alt={`${title} Logo`} />
-    <h3>{title}</h3>
+    <p class="desc">{title}</p>
 </div>
 
 
 <style>
+    .desc {
+        display: block;
+        font-size: 2rem;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        line-height: 1.1;
+        font-family: var(--font-brand);
+        font-weight: 600;
+        color: var(--gray-100);
+    }
     .skill {
         display: flex;
         flex-direction: column;
