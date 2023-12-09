@@ -23,6 +23,11 @@ const tech = {
 		"Leaflet",
 		"D3",
 		"PostgreSQL"
+	],
+	ibm: [
+		"Java",
+		"Spring Boot",
+		"Hibernate"
 	]
 }
 
@@ -95,7 +100,7 @@ const awards = [
 					take on challenges, which is why I started programming at a younger age.
 				</p>
 				<p>
-					As of now, I am a student at Tecnológico de Monterrey, where I am pursuing a
+					I am currently a student at Tecnológico de Monterrey, where I am pursuing a
 					B.S. in Computer Science and Technology. I am also working as a Software 
 					Engineer Intern at my college, where I collaborate with a team of urbanism 
 					researchers to create interactive data visualizations and web applications.
@@ -121,10 +126,32 @@ const awards = [
 			<h2 class="section-title">Work Experience</h2>
 			<div class="content">
 				<header>
+					<h3>Consultant and Microservice Developer Intern</h3>
+					<div class="inline-wrapper between">
+						<strong>IBM</strong>
+						<span class="date">October 2023 - Present</span>
+					</div>
+				</header>
+				<ul class="inline-wrapper start">
+					{
+						tech.ibm.map((skill) => (
+							<li><Pill size="sm">{skill}</Pill></li>
+						))
+					}
+				</ul>
+
+				<details open>
+					<summary>Functions</summary>
+					<ul>
+						<li>RESTful API development with Spring Boot</li>
+						<li>Containerize solutions with Docker</li>
+				</details>
+
+				<header>
 					<h3>Software and Data Engineer Intern</h3>
 					<div class="inline-wrapper between">
 						<strong>Tecnológico de Monterrey</strong>
-						<span class="date">August 2022 - Present</span>
+						<span class="date">August 2022 - October 2023</span>
 					</div>
 				</header>
 				<ul class="inline-wrapper start">
