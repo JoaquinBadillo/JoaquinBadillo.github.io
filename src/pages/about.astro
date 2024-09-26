@@ -14,7 +14,20 @@ const skills = [
 	"Critical Thinking",
 	"Time Management",
 	"Teamwork",
-	"Mathematical Reasoning"
+	"Mathematical Reasoning",
+	"System Administration",
+	"Algorithms",
+	"Data Structures",
+	"Computer Networks",
+	"Systems Design",
+	"Software Design",
+	"Version Control",
+	"CI/CD",
+	"Cloud Computing",
+	"Containerization",
+	"API Development",
+	"Databases",
+	"Abstraction"
 ].sort((a, b) => a.localeCompare(b, "en", {sensitivity: 'base'}));
 
 const tech = {
@@ -28,6 +41,19 @@ const tech = {
 		"Java",
 		"Spring Boot",
 		"Hibernate"
+	],
+	gcp_intern: [
+		"Docker",
+		"Terraform",
+		"Linux",
+		"Networks",
+		"Go",
+		"Python",
+		"CI/CD"
+	],
+	teradata_intern: [
+		"Git",
+		"AWS"
 	]
 }
 
@@ -126,6 +152,47 @@ const awards = [
 			<h2 class="section-title">Work Experience</h2>
 			<div class="content">
 				<header>
+					<h3>Cloud Engineering Intern</h3>
+					<div class="inline-wrapper between">
+						<strong>Teradata. | QueryGrid </strong>
+						<span class="date">September 2024 - Present</span>
+					</div>
+				</header>
+				<ul class="inline-wrapper start">
+					{
+						tech.teradata_intern.map((skill) => (
+							<li><Pill size="sm">{skill}</Pill></li>
+						))
+					}
+				</ul>
+
+				<header>
+					<h3>Software Engineer Intern</h3>
+					<div class="inline-wrapper between">
+						<strong>Google | Google Cloud | Chrome Enterprise Premium </strong>
+						<span class="date">June 2024 - August 2024</span>
+					</div>
+				</header>
+				<ul class="inline-wrapper start">
+					{
+						tech.gcp_intern.map((skill) => (
+							<li><Pill size="sm">{skill}</Pill></li>
+						))
+					}
+				</ul>
+
+				<details open>
+					<summary>Functions</summary>
+					<ul>
+						<li>Configure and deploy a containerized telemetry service.</li>
+						<li>Configure an automated CI/CD workflow to build and promote artifacts for release.</li>
+						<li>
+							Use different testing approaches: E2E, hermetic integration testing and load testing, to
+							assert and verify expected behaviors.
+						</li>
+					</ul>
+				</details>
+				<header>
 					<h3>Consultant and Microservice Developer Intern</h3>
 					<div class="inline-wrapper between">
 						<strong>IBM</strong>
@@ -145,6 +212,7 @@ const awards = [
 					<ul>
 						<li>RESTful API development with Spring Boot</li>
 						<li>Containerize solutions with Docker</li>
+					</ul>
 				</details>
 
 				<header>
@@ -168,6 +236,7 @@ const awards = [
 						<li>Develop geospatial visualizations</li>
 						<li>Maintain and develop the frontend of web applications</li>
 						<li>Collaborate with researchers and interns remotely</li>
+					</ul>
 				</details>
 
 				<header>
@@ -190,6 +259,7 @@ const awards = [
 							<li>Introduction to Web Development (Front-end)</li>
 							<li>Introductory Computer Science and Programming</li>
 						</ul>
+					</ul>
 				</details>
 			</div>
 		</section>
@@ -232,10 +302,10 @@ const awards = [
 				
 					<ul>
 						<li>Mathematics: Analysis and Approaches (SL)</li>
-							<ul>
-								<li> Approximating Trascendental Functions using Arithmetic </li>
-								<li> Researching the applications of Differential Geometry in Aviation (Geodesics) </li>
-							</ul>
+						<ul>
+							<li> Approximating Trascendental Functions using Arithmetic </li>
+							<li> Researching the applications of Differential Geometry in Aviation (Geodesics) </li>
+						</ul>
 					</ul>
 				</details>
 			</div>
